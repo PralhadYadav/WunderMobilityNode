@@ -1,0 +1,1 @@
+export const smapleData = [{ "productId": 1, "name": "Watch", "category": "fashion", "url": "../../assets/watch.jpeg", "price": 2000, "count": 1 }]
