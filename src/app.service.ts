@@ -25,7 +25,7 @@ export class AppService {
 */
   getCartPrice(data: any) {
     try {
-      let offersArr = offers.map(obj => ({...obj}))
+      let offersArr = offers.map(obj => ({ ...obj }))
       let cartValue: number = 0;
       for (let offer of offersArr) {
         if (offer.productId) {
@@ -86,7 +86,7 @@ export class AppService {
         status: 200,
         messege: "success",
         data: [{
-          "cartValue": cartValue,
+          "cartValue": cartValue > 0 ? cartValue : "No Offer Applied",
           offers: offersArr
         }]
       };
